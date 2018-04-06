@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV Sebastian Casillas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+
+    <style>
+        body{margin:0px; padding:0px; border:0px; background:black;width:215.9mm;height: 279.4mm;}
+        p, h1, h2, h3, h4, h5, h6, a{
+            color:rgb(70,70,70);
+            font-family: Verdana, Geneva, sans-serif;
+            padding:0; margin: 0;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <script type="text/javascript">
+    $( document ).ready(function() {
+      fetch_data();
+    });
+
+      async function fetch_data(){
+        let info = await $.get( "http://localhost:8765/jsd");
+        console.log(info);
+
+      }
+    </script>
+</body>
